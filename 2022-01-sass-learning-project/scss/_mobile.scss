@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+  .showcase {
+    img {
+      display: none;
+    }
+
+    &-content {
+      text-align: center;
+    }
+  }
+}
+@media (min-width: 501px) {
+  .header {
+    .nav-narrow {
+      display: none;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    .nav-wide {
+      display: none;
+    }
+    .nav-narrow {
+      margin-top: 15px;
+      nav {
+        display: block;
+        text-align: center;
+
+        ul {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
