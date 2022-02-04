@@ -31,10 +31,10 @@ body {
 
 .header {
   background-color: #23424a;
+  color: white;
+  padding: 2rem 0;
 }
 
 .intro-content {
-  color: white;
-  padding: 2rem 0;
   width: 50%;
 }
