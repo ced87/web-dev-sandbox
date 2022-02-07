@@ -8,52 +8,53 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
+  font-size: 1.3125rem;
 }
 
 .container {
   width: 80%;
-  max-width: 750px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .header {
+  padding: 100px 0;
   background: var(--bg-color);
-  overflow: auto;
   color: white;
 }
 
-.intro-content {
-  padding: 8rem 0;
+.header__content {
   width: 75%;
 }
 
-h3 {
+h1 {
   font-weight: 900;
-  font-size: 48px;
+  font-size: 3rem;
 }
 
-p {
-  font-size: 21px;
-}
-
-.button {
+.btn {
+  display: inline-block;
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--primary-color);
   background-color: var(--secondary-color);
   font-weight: bold;
   font-size: 21px;
-  padding: 0.75rem 3rem;
-  border-radius: 5rem;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  transition: transform 150ms ease;
+  transition: opacity 150ms ease;
 }
 
-.mb-2 {
-  margin-bottom: 2rem;
+.btn:hover,
+.btn:focus {
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 .mb-4 {
