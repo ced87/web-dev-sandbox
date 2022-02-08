@@ -3,7 +3,7 @@
 
 - All text is in the text.md file
 
-** Requirements
+// Requirements
 1. Refer to the design specs for the
    overall layout 
 2. The image should line up with
@@ -33,10 +33,6 @@ h1 {
   margin-top: 0;
 }
 
-h2 {
-  font-size: 2rem;
-}
-
 .container {
   width: 80%;
   max-width: 1100px;
@@ -47,12 +43,18 @@ h2 {
   /* display: flex => flex container */
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+
+  /* can't use yet */
+  /* gap: 100px; */
 }
 
 .col {
   /* these are now flex items */
   width: 100%;
+}
+
+.col + .col {
+  margin-left: 30px;
 }
 
 .hero {
@@ -62,29 +64,16 @@ h2 {
 }
 
 .hero__text {
-  width: 60%;
+  width: 62%;
 }
 
 .hero__img {
+  width: 32%;
   align-self: flex-start;
 }
 
-.content {
-  padding: 3rem 0;
-}
-
-.content__text {
-  width: 60%;
-  color: #136c72;
-  padding: 2rem 0;
-}
-
-.content__side-text {
-  background: #136c72;
-  color: white;
-  padding: 2rem;
-  width: 35%;
-  text-align: center;
+.hero p {
+  margin-bottom: 3em;
 }
 
 .btn {
@@ -96,11 +85,9 @@ h2 {
   background-color: #38cfd9;
   padding: 0.75em 2em;
   border-radius: 100px;
-  transition: opacity 350ms ease, transform 350ms ease;
 }
 
 .btn:hover,
 .btn:focus {
   opacity: 0.75;
-  transform: scale(1.05);
 }
