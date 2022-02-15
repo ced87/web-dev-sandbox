@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap');
+
+:root {
+  --clr-primary: #824936;
+  --clr-secondary: #222c2a;
+  --clr-light: #f3eed9;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3125rem;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+}
+
+/**###################################*/
+.container {
+  width: min(80%, 1128px);
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  gap: 3em;
+}
+
+/**########*/
+.header {
+  padding: 7em 0;
+  background: var(--clr-light);
+}
+
+.header__title {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/**########*/
+.intro {
+  padding: 4em 0;
+}
+
+.intro__title h3 {
+  text-align: center;
+}
+
+/**########*/
+.first-info {
+  padding: 4em;
+  background: var(--clr-secondary);
+}
+
+.first-info__text {
+  width: 50%;
+}
+
+.first-info__img {
+  width: 50%;
+}
+
+/**########*/
+.second-info {
+  padding: 4em;
+  background: var(--clr-primary);
+}
+
+.second-info__text {
+  width: 50%;
+}
+
+.second-info__img {
+  width: 50%;
+}
+
+/* *################################### */
+.font-playwright {
+  font-family: 'Playfair Display', serif;
+}
+
+.text-primary {
+  color: var(--clr-primary);
+}
+
+.text-secondary {
+  color: var(--clr-secondary);
+}
+
+.text-light {
+  color: var(--clr-light);
+}
+
+.mt-3 {
+  margin-top: 0.3rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
