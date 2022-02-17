@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap');
+
+:root {
+  --clr-primary: #824936;
+  --clr-secondary: #222c2a;
+  --clr-light: #f3eed9;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  color: var(--clr-secondary);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+section {
+  padding: 4em 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1128px;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  color: var(--clr-light);
+}
+
+.section-title--dark {
+  color: var(--clr-primary);
+}
+
+.intro {
+  background: var(--clr-light);
+  text-align: center;
+  color: var(--clr-primary);
+  min-height: 660px;
+
+  display: flex;
+  align-items: center;
+}
+
+.intro__text {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: 10px;
+  color: var(--clr-secondary);
+  margin: 0 0 0.25em;
+}
+
+.intro__title {
+  font-size: 3rem;
+}
+
+.section-three {
+  background-color: var(--clr-secondary);
+  color: white;
+}
+
+.section-four {
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+    gap: 5rem;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .intro__title {
+    font-size: 3.75rem;
+  }
+}
