@@ -9,17 +9,19 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container row">
+        <a class="logo" href="#"><img src="img/logo.svg" alt="logo" /></a>
         <nav class="nav">
-          <a class="logo" href="#"><img src="img/logo.svg" alt="logo" /></a>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
           </ul>
-          <ul>
-            <li>Sign in</li>
-            <li>Sign up</li>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Sign in</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link btn">Sign up</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -27,30 +29,33 @@
 
     <section class="intro">
       <div class="container">
-        <h1>Responsive layouts <span>don't have to be a struggle</span></h1>
-        <p>
+        <h1>
+          Responsive layouts
+          <span class="primary-color">don't have to be a struggle</span>
+        </h1>
+        <p class="intro__text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum placeat
           unde at? Minus reprehenderit quam harum expedita. Inventore, eveniet
           officia? Repudiandae amet iure quos quo?
         </p>
-        <a href="#" class="btn">I want to learn</a>
+        <a href="#" class="btn btn-primary">I want to learn</a>
       </div>
     </section>
 
     <section class="info">
       <div class="container">
-        <h3>Mobile-first</h3>
-        <p>
+        <h4 class="primary-color">Mobile-first</h4>
+        <p class="info__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed error
           molestias molestiae porro eveniet?
         </p>
-        <h3>Efficient</h3>
-        <p>
+        <h4 class="primary-color">Efficient</h4>
+        <p class="info__text">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad deserunt
           tenetur praesentium non voluptate nesciunt possimus!
         </p>
-        <h3>Done right</h3>
-        <p>
+        <h4 class="primary-color">Done right</h4>
+        <p class="info__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
           explicabo accusantium dicta temporibus. Earum, dolor!
         </p>
@@ -58,73 +63,111 @@
     </section>
 
     <main>
-      <div class="container">
-        <h3>It doesn't have to be so hard</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          quas corporis numquam itaque sint, molestias nobis dolorem animi autem
-          velit unde laboriosam blanditiis mollitia temporibus atque culpa?
-          Incidunt numquam ipsum officiis reiciendis consequuntur, eum
-          consectetur.
-        </p>
-        <img src="img/the-image.jpg" alt="website design" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi
-          quibusdam harum quis cumque consectetur impedit deserunt blanditiis
-          voluptatum illum nemo obcaecati, iusto repudiandae, odio autem aliquid
-          dolorem nam architecto! Doloribus eius placeat ipsam itaque nulla
-          ratione impedit laboriosam consequatur.
-        </p>
-        <div class="card">
-          <h4>Break it down</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui libero
-            dicta cupiditate ab nisi explicabo eligendi molestiae nemo?
+      <div class="container main-row">
+        <div class="col">
+          <h3 class="primary-color">It doesn't have to be so hard</h3>
+          <p class="main__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            quas corporis numquam itaque sint, molestias nobis dolorem animi
+            autem velit unde laboriosam blanditiis mollitia temporibus atque
+            culpa? Incidunt numquam ipsum officiis reiciendis consequuntur, eum
+            consectetur.
+          </p>
+          <img src="img/the-image.jpg" alt="website design" />
+          <p class="main__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi
+            quibusdam harum quis cumque consectetur impedit deserunt blanditiis
+            voluptatum illum nemo obcaecati, iusto repudiandae, odio autem
+            aliquid dolorem nam architecto! Doloribus eius placeat ipsam itaque
+            nulla ratione impedit laboriosam consequatur.
           </p>
         </div>
-        <div class="card">
-          <h4>Work your way up</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui libero
-            dicta cupiditate ab nisi explicabo eligendi molestiae nemo?
-          </p>
-        </div>
-        <div class="card">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui libero
-            dicta cupiditate ab nisi explicabo eligendi molestiae nemo?
-          </p>
+        <div class="col">
+          <div class="card-row row">
+            <div class="card">
+              <h4>Break it down</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                libero dicta cupiditate ab nisi explicabo eligendi molestiae
+                nemo?
+              </p>
+            </div>
+            <div class="card">
+              <h4>Work your way up</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                libero dicta cupiditate ab nisi explicabo eligendi molestiae
+                nemo?
+              </p>
+            </div>
+            <div class="card">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                libero dicta cupiditate ab nisi explicabo eligendi molestiae
+                nemo?
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
     <footer>
-      <h2>Just scratching the surface</h2>
-      <h5>About our company</h5>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, et iste,
-        repellat id quas aut vel architecto esse enim sunt atque voluptatem?
-      </p>
-      <h5>Getting around</h5>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-      <h5>Other things</h5>
-      <ul>
-        <li>Lorem ipsum</li>
-        <li>dolor</li>
-        <li>sit amit</li>
-        <li>consectetur</li>
-      </ul>
-      <h5>And more</h5>
-      <ul>
-        <li>Lorem ipsum</li>
-        <li>dolor</li>
-        <li>sit amit</li>
-        <li>consectetur</li>
-      </ul>
+      <div class="container">
+        <h2>Just scratching the surface</h2>
+        <div class="footer-row">
+          <div class="footer__about">
+            <h5 class="primary-color">About our company</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, et
+              iste, repellat id quas aut vel architecto esse enim sunt atque
+              voluptatem?
+            </p>
+          </div>
+          <ul class="footer-nav__list">
+            <h5 class="primary-color">Getting around</h5>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Home</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">About</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Contact</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <h5 class="primary-color">Other things</h5>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Lorem ipsum</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">dolor</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">sit amit</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">consectetur</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <h5 class="primary-color">And more</h5>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Lorem ipsum</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">dolor</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">sit amit</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">consectetur</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
